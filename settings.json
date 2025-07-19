@@ -1,0 +1,12 @@
+{
+    "DEBUG": false,
+    "BOT_TOKEN": "8023435434:AAEglPWysxzrgkWoSXOFygM7utv-5nKxJbU",
+    "FIRST_START": false,
+    "WAITING_FOR_ADMIN_IDS": false,
+    "ADMIN_IDS": [
+        2128436782
+    ],
+    "FUNCTIONS_ALLOWED": [],
+    "SUDO_USER": "roman",
+    "SUDO_PASSWORD": "1234"
+}
