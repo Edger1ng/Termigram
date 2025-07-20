@@ -1,0 +1,21 @@
+{
+    "hashes.json": "5a3771593d73c122c5084286bbb052c16e9247b32d2c8679e94dde32cd8fcd8b",
+    ".gitignore": "1d12e03019033728779c5c20363c2969adbd1d558e9dedc28fe36cebaef7525c",
+    "main.py": "50776c36589af10e79a6f5a7bea9a5c57d26843ad293711d9c6d95af8ff262f1",
+    "shagen.py": "c213fb42ae711a319aa393687c0ab746884425a868e6b3ddeecac5889cfec998",
+    "README.md": "ba23973b866c263c51939dfbb8650a8dfb60fa5470b686841ab0272af337ed96",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "settings.json": "6ecd3fdbcb3ad5f0bdd4ffbc6486b2c7fd623414c6916515aa23225fc82ad4a6",
+    "functions/arg_parse.py": "c578d94e9852a3adefd282dfb711f4aeb63a5803943da01f81d8e1185624c63f",
+    "functions/admin_verify.py": "b734c32fe637946bf10aefab2cc5356f339f96acb86d3eca93157b1aea293ab2",
+    "functions/start.py": "69cac85700712151c12cb1683450444a474ac8610de0c154b0a7bb59fa52bb57",
+    "functions/json_functions.py": "2be215c273dab172e0068d44786cf7569e0d45b4716962694478ab482b1588cd",
+    "functions/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "commands/start.py": "3eb59bc702d257008837e44439df79bb4b750da9feeb51d3f472406ccffdf489",
+    "commands/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "commands/panel.py": "4f398580a1dce92b74b758d39f5e40552b3ea8c7b68c67dd8990f83ea9ec59fa",
+    "helper/random_digits.py": "2db4c9056cb41a2e87773b12accd0776454ae5fe7f76e792f51b67b2bc281549",
+    "helper/get_system.py": "988641bacf267311df77475103b774c8d6c89f5711d6bd9428176b919dd6890e",
+    "helper/update.py": "530e0a9effb42d956a6791264aa91188ea4b53a6b7e7d184945e06274536f134",
+    "helper/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

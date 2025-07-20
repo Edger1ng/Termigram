@@ -26,6 +26,8 @@ async def verify_admin_code(callback: types.CallbackQuery):
         if user_id not in settings["ADMIN_IDS"]:
             settings["ADMIN_IDS"].append(user_id)
             settings["WAITING_FOR_ADMIN_IDS"] = False
+            settings["FIRST_START"] = False
+
             json_f.save(settings)
 
         await callback.message.edit_text("✅ Correct! You are now an admin.")
