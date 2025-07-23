@@ -8,7 +8,7 @@ from aiogram.enums import ParseMode
 from functions import json_functions as json_f
 from commands.start import cmd_start
 from functions.admin_verify import verify_admin_code
-from commands import panel, stats
+from commands import panel, stats, reboot, shutdown
 from functions import start as strt
 from functions import arg_parse
 
@@ -56,6 +56,10 @@ async def handle_panel(message: Message):
 @dp.callback_query(F.data == "system_control")
 async def handle_system_control(callback: types.CallbackQuery):
     await panel.callback_query_system_control(callback)
+    
+@dp.callback_query(F.data == "system_control_2")
+async def handle_system_control_2(callback: types.CallbackQuery):
+    await panel.callback_query_system_control_2(callback)
 
 
 @dp.callback_query(F.data == "file_system")
@@ -91,6 +95,21 @@ async def handle_back(callback: types.CallbackQuery):
 async def handle_stats_control(callback: types.CallbackQuery):
     await stats.cmd_stats(callback)
 
+@dp.callback_query(F.data == "reboot")
+async def handle_reboot(callback: types.CallbackQuery):
+    await reboot.cmd_reboot_main(callback)
+
+@dp.callback_query(F.data == "reboot_confirm")
+async def handle_reboot_confirm(callback: types.CallbackQuery):
+    await reboot.cmd_reboot_confirm(callback)
+    
+@dp.callback_query(F.data == "shutodwn")
+async def handle_shutdown(callback: types.CallbackQuery):
+    await shutdown.cmd_shutodwn_main(callback)
+
+@dp.callback_query(F.data == "shutodwn_confirm")
+async def handle_shutdown_confirm(callback: types.CallbackQuery):
+    await shutdown.cmd_shutodwn_confirm(callback)
 
 async def main_f():
     strt.main_f()
