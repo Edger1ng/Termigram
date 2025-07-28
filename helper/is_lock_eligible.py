@@ -1,7 +1,12 @@
 import platform
 import os
 import shutil
-from ctypes import windll
+import platform
+if platform.system() == "Windows":
+    from ctypes import windll
+else:
+    windll = None
+
 
 def is_lock_eligible():
     system = platform.system().lower()
