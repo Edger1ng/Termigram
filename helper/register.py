@@ -3,7 +3,7 @@ from aiogram.types import Message
 
 from commands.start import cmd_start
 from functions.admin_verify import verify_admin_code
-from commands import panel, stats, reboot, shutdown, lock
+from commands import panel, stats, reboot, shutdown, lock, sys_info, update_system
 
 def register_handlers(dp: Dispatcher):
     @dp.message(F.text == "/start")
@@ -77,3 +77,11 @@ def register_handlers(dp: Dispatcher):
     @dp.callback_query(F.data == "lock_confirm")
     async def handle_lock_confirm(callback: types.CallbackQuery):
         await lock.lock_confirm(callback)
+
+    @dp.callback_query(F.data == "system_info")
+    async def handle_system_info(callback: types.CallbackQuery):
+        await sys_info.cmd_sys_info(callback)
+
+    @dp.callback_query(F.data == "update_system")
+    async def handle_update_system(callback: types.CallbackQuery):
+        await update_system.cmd_update_system(callback)

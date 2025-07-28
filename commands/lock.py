@@ -5,7 +5,7 @@ from aiogram.client.default import DefaultBotProperties
 import os
 
 from functions import json_functions as json_f
-from functions import lock
+from functions import lock as lock_utils
 
 settings = json_f.load(json_f.SETTINGS_FILE)
 
@@ -38,8 +38,8 @@ async def lock_confirm(callback: types.CallbackQuery):
         ])
         await callback.message.edit_text(text=text, reply_markup=keyboard)
         
-        success, message, cmd = lock.lock_screen()
+        success, message, cmd = lock_utils.lock_screen()
         if success:
             os.system(cmd)
         else:
-            await callback.message.answer(message)
+            await callback.message.edit_text(message)

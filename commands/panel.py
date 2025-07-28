@@ -56,7 +56,6 @@ async def callback_query_system_control_2(callback: types.CallbackQuery):
     user_name = callback.from_user.username or "Unknown User"
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=[
         [types.InlineKeyboardButton(text="📊 System Info", callback_data="system_info")],
-        [types.InlineKeyboardButton(text="📈 Resource Usage", callback_data="resource_usage")],
         [types.InlineKeyboardButton(text="🔄 Update System", callback_data="update_system")],
         [types.InlineKeyboardButton(text="Back to Menu", callback_data="back")]
     ])

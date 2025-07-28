@@ -1,6 +1,6 @@
 import subprocess
 import threading
-from get_system import get_system_info  
+from helper.get_system import get_system_info
 from functions import json_functions as json_f
 
 settings = json_f.load(json_f.SETTINGS_FILE)
